@@ -1,11 +1,15 @@
+import Nav from "./Nav";
 import styles from "../styles/Layout.module.css";
- const Layout = ({ children }) => {
+const Layout = ({ children }) => {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>{children}</main>
-      Layout
-    </div>
+    <>
+      <Nav />
+      <div className={styles.container}>
+        <main className={styles.main}>{children}</main>
+        Layout
+      </div>
+    </>
   );
 };
 
-export default Layout
+export default Layout;
